@@ -14,18 +14,18 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full bg-white shadow-sm dark:bg-gray-950 dark:text-gray-50">
       <div className="container mx-auto flex h-16 max-w-8xl items-center justify-between px-4 md:px-6">
-        <Link href="#" className="flex items-center" prefetch={false}>
+        <Link href="/" className="flex items-center" prefetch={false}>
           <Image src={Logo} width="32" alt="Resume Builder Logo" />
           <span className="ml-2 text-lg font-bold">Resume Builder</span>
         </Link>
         <nav className="hidden lg:flex items-center space-x-6">
-          <Link href="#" className="text-sm font-medium hover:underline hover:underline-offset-4" prefetch={false}>
-            About
+          <Link href="/" className="text-sm font-medium hover:underline hover:underline-offset-4" prefetch={false}>
+            Home
           </Link>
           <Link href="#" className="text-sm font-medium hover:underline hover:underline-offset-4" prefetch={false}>
             Services
           </Link>
-          <Link href="#" className="text-sm font-medium hover:underline hover:underline-offset-4" prefetch={false}>
+          <Link href="/contact" className="text-sm font-medium hover:underline hover:underline-offset-4" prefetch={false}>
             Contact
           </Link>
           <Link href="#" className="text-sm font-medium hover:underline hover:underline-offset-4" prefetch={false}>
