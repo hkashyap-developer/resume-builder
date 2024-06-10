@@ -5,13 +5,17 @@
  */
 import Link from "next/link"
 
+
+import Image from "next/image"
+import HeroImage from "/public/HeroImage.png"
+
 export default function HomeHero() {
   return (
     <section className="w-full ">
       <div className="container grid items-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-12">
         <div className="space-y-4">
           <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-            Unlock the Power of Web Development
+            Be a brand with our Resume Bulder!
           </h1>
           <p className="max-w-[600px] text-gray-500 md:text-xl lg:text-lg xl:text-xl dark:text-gray-400">
             Discover our comprehensive platform that empowers you to build exceptional web experiences with ease.
@@ -25,8 +29,8 @@ export default function HomeHero() {
             Get Started
           </Link>
         </div>
-        <img
-          src="/placeholder.svg"
+        <Image
+          src={HeroImage}
           width="500"
           height="500"
           alt="Hero"
