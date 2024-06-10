@@ -14,9 +14,8 @@ export default function Contact() {
       <div className="space-y-6">
         <div className="text-center">
           <h1 className="text-3xl md:text-4xl font-bold tracking-tight">Get in Touch</h1>
-          <p className="mt-3 text-lg text-gray-500 py-6 dark:text-gray-400">
-            Have a question or want to work together? Fill out the form below and we'll get back to you as soon as
-            possible.
+          <p className="mt-3 text-2xl text-black-500 py-6 dark:text-gray-400">
+            We will reply to you as soon as we get your email. We would love to hear from you!
           </p>
         </div>
         <form className="space-y-6">
