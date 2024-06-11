@@ -86,7 +86,7 @@ export default function Header() {
 function MenuIcon({ className = "" }) {
   return (
     <svg
-      className={`${className}`}
+      className={className}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -106,10 +106,10 @@ function MenuIcon({ className = "" }) {
 
 // Correct way implmented in the above component
 
-function MountainIcon(props) {
+function MountainIcon({ className = "" }) {
   return (
     <svg
-      {...props}
+      className={className}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
