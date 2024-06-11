@@ -3,12 +3,12 @@
  * @see https://v0.dev/t/Lz3jewC5SFX
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
-import Link from "next/link"
-import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet"
-import { Button } from "@/components/ui/button"
+import Link from "next/link";
+import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
+import { Button } from "@/components/ui/button";
 
-import Image from "next/image"
-import Logo from "/public/favicon.ico"
+import Image from "next/image";
+import Logo from "/public/favicon.ico";
 
 export default function Header() {
   return (
@@ -19,10 +19,18 @@ export default function Header() {
           <span className="ml-2 text-lg font-bold">Resume Builder</span>
         </Link>
         <nav className="hidden lg:flex items-center space-x-6">
-          <Link href="/" className="text-sm font-medium hover:underline hover:underline-offset-4" prefetch={false}>
+          <Link
+            href="/"
+            className="text-sm font-medium hover:underline hover:underline-offset-4"
+            prefetch={false}
+          >
             Home
           </Link>
-          <Link href="/contact" className="text-sm font-medium hover:underline hover:underline-offset-4" prefetch={false}>
+          <Link
+            href="/contact"
+            className="text-sm font-medium hover:underline hover:underline-offset-4"
+            prefetch={false}
+          >
             Contact
           </Link>
           <Link
@@ -72,13 +80,13 @@ export default function Header() {
         </div>
       </div>
     </header>
-  )
+  );
 }
 
-function MenuIcon(props) {
+function MenuIcon({ className = "" }) {
   return (
     <svg
-      {...props}
+      className={`${className}`}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -93,9 +101,10 @@ function MenuIcon(props) {
       <line x1="4" x2="20" y1="6" y2="6" />
       <line x1="4" x2="20" y1="18" y2="18" />
     </svg>
-  )
+  );
 }
 
+// Correct way implmented in the above component
 
 function MountainIcon(props) {
   return (
@@ -113,5 +122,5 @@ function MountainIcon(props) {
     >
       <path d="m8 3 4 8 5-5 5 15H2L8 3z" />
     </svg>
-  )
+  );
 }
